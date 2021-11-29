@@ -8,7 +8,8 @@ def insertionSort(cl):
             cl[j+1]=cl[j]
             j-=1
         cl[j+1]=key
-    print(cl)
+    return cl
 
-customList=[2,1,7,6,5,3,4,9,8]
-insertionSort(customList)
+if __name__=='__main__':
+    customList=[2,1,7,6,5,3,4,9,8]
+    print(insertionSort(customList))
